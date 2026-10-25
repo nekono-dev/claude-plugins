@@ -1,0 +1,17 @@
+{
+  "name": "nekono-dev",
+  "owner": { "name": "nekono-dev" },
+  "description": "nekono-dev の Claude Code プラグイン",
+  "plugins": [
+    {
+      "name": "branch-release-workflow",
+      "source": { "source": "github", "repo": "nekono-dev/branch-release-workflow" },
+      "description": "作業ブランチ運用の強制（フック）と、プレビュー/本番の CI/CD の整備・案内"
+    },
+    {
+      "name": "spec-driven-development",
+      "source": { "source": "github", "repo": "nekono-dev/spec-driven-development" },
+      "description": "specs/<component>/ の 3 点セットと architecture・PoC を spec-lint で判定する仕様駆動開発の進め方"
+    }
+  ]
+}
