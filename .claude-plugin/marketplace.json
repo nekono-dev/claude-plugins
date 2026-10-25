@@ -19,6 +19,11 @@
       "description": "Docker（compose・Dockerfile）で動くアプリを、bootstrap-ci-builder の上でホストのサービス（Debian 系＋systemd、Alpine＋OpenRC）として動かす app.sh・起動ラッパー・共通ライブラリの整備"
     },
     {
+      "name": "password-form-repair",
+      "source": { "source": "github", "repo": "nekono-dev/password-form-repair" },
+      "description": "ログイン・パスワード入力フォームを、パスワードマネージャ（Proton Pass 等）が自動入力・パスワード生成できる形に直す／作る（静的監査・実機の切り分け手順・React/Preact/HTML/Astro の雛形）"
+    },
+    {
       "name": "spec-driven-development",
       "source": { "source": "github", "repo": "nekono-dev/spec-driven-development" },
       "description": "specs/<component>/ の 3 点セットと architecture・PoC を spec-lint で判定する仕様駆動開発の進め方"
