@@ -6,6 +6,7 @@ nekono-dev の Claude Code プラグインのマーケットプレイス（名�
 | --- | --- | --- |
 | `bootstrap-ci-builder` | ブランチ・タグごとにコミット固定の `install.sh` を CI で頒布し、`<アプリ名>-ctl` で更新・切り替え・削除する仕組みの整備 | [nekono-dev/bootstrap-ci-builder](https://github.com/nekono-dev/bootstrap-ci-builder) |
 | `branch-release-workflow` | 作業ブランチ運用の強制（フック）と、プレビュー/本番の CI/CD の整備・案内 | [nekono-dev/branch-release-workflow](https://github.com/nekono-dev/branch-release-workflow) |
+| `host-service-builder` | Docker で動くアプリを、bootstrap-ci-builder の上でホストのサービス（systemd・OpenRC）として動かす仕組みの整備 | [nekono-dev/host-service-builder](https://github.com/nekono-dev/host-service-builder) |
 | `spec-driven-development` | 仕様駆動開発（specs の 3 点セット・architecture・PoC）の進め方 | [nekono-dev/spec-driven-development](https://github.com/nekono-dev/spec-driven-development) |
 
 ## 使い方
@@ -27,6 +28,7 @@ nekono-dev の Claude Code プラグインのマーケットプレイス（名�
   "enabledPlugins": {
     "bootstrap-ci-builder@nekono-dev": true,
     "branch-release-workflow@nekono-dev": true,
+    "host-service-builder@nekono-dev": true,
     "spec-driven-development@nekono-dev": true
   }
 }
@@ -41,6 +43,7 @@ CI（`anthropics/claude-code-action`）:
     plugins: |
       bootstrap-ci-builder@nekono-dev
       branch-release-workflow@nekono-dev
+      host-service-builder@nekono-dev
       spec-driven-development@nekono-dev
 ```
 

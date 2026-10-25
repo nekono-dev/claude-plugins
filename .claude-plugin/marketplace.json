@@ -14,6 +14,11 @@
       "description": "作業ブランチ運用の強制（フック）と、プレビュー/本番の CI/CD の整備・案内"
     },
     {
+      "name": "host-service-builder",
+      "source": { "source": "github", "repo": "nekono-dev/host-service-builder" },
+      "description": "Docker（compose・Dockerfile）で動くアプリを、bootstrap-ci-builder の上でホストのサービス（Debian 系＋systemd、Alpine＋OpenRC）として動かす app.sh・起動ラッパー・共通ライブラリの整備"
+    },
+    {
       "name": "spec-driven-development",
       "source": { "source": "github", "repo": "nekono-dev/spec-driven-development" },
       "description": "specs/<component>/ の 3 点セットと architecture・PoC を spec-lint で判定する仕様駆動開発の進め方"
