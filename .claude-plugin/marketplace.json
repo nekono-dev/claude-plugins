@@ -4,6 +4,11 @@
   "description": "nekono-dev の Claude Code プラグイン",
   "plugins": [
     {
+      "name": "bootstrap-ci-builder",
+      "source": { "source": "github", "repo": "nekono-dev/bootstrap-ci-builder" },
+      "description": "ブランチ・タグごとにコミット固定の install.sh を GitHub Actions で生成・頒布し、「アプリ名-ctl」で update・--ref による切り替え・uninstall を行う仕組みの整備"
+    },
+    {
       "name": "branch-release-workflow",
       "source": { "source": "github", "repo": "nekono-dev/branch-release-workflow" },
       "description": "作業ブランチ運用の強制（フック）と、プレビュー/本番の CI/CD の整備・案内"

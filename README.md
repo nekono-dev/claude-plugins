@@ -4,6 +4,7 @@ nekono-dev の Claude Code プラグインのマーケットプレイス（名�
 
 | プラグイン | 内容 | リポジトリ |
 | --- | --- | --- |
+| `bootstrap-ci-builder` | ブランチ・タグごとにコミット固定の `install.sh` を CI で頒布し、`<アプリ名>-ctl` で更新・切り替え・削除する仕組みの整備 | [nekono-dev/bootstrap-ci-builder](https://github.com/nekono-dev/bootstrap-ci-builder) |
 | `branch-release-workflow` | 作業ブランチ運用の強制（フック）と、プレビュー/本番の CI/CD の整備・案内 | [nekono-dev/branch-release-workflow](https://github.com/nekono-dev/branch-release-workflow) |
 | `spec-driven-development` | 仕様駆動開発（specs の 3 点セット・architecture・PoC）の進め方 | [nekono-dev/spec-driven-development](https://github.com/nekono-dev/spec-driven-development) |
 
@@ -24,6 +25,7 @@ nekono-dev の Claude Code プラグインのマーケットプレイス（名�
     "nekono-dev": { "source": { "source": "github", "repo": "nekono-dev/claude-plugins" } }
   },
   "enabledPlugins": {
+    "bootstrap-ci-builder@nekono-dev": true,
     "branch-release-workflow@nekono-dev": true,
     "spec-driven-development@nekono-dev": true
   }
@@ -37,6 +39,7 @@ CI（`anthropics/claude-code-action`）:
   with:
     plugin_marketplaces: https://github.com/nekono-dev/claude-plugins.git
     plugins: |
+      bootstrap-ci-builder@nekono-dev
       branch-release-workflow@nekono-dev
       spec-driven-development@nekono-dev
 ```
